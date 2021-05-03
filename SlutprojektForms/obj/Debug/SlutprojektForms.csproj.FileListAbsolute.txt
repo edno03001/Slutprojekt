@@ -1,0 +1,11 @@
+C:\Users\edno03001\Source\Repos\Slutprojekt\SlutprojektForms\bin\Debug\SlutprojektForms.exe.config
+C:\Users\edno03001\Source\Repos\Slutprojekt\SlutprojektForms\bin\Debug\SlutprojektForms.exe
+C:\Users\edno03001\Source\Repos\Slutprojekt\SlutprojektForms\bin\Debug\SlutprojektForms.pdb
+C:\Users\edno03001\Source\Repos\Slutprojekt\SlutprojektForms\obj\Debug\SlutprojektForms.csprojAssemblyReference.cache
+C:\Users\edno03001\Source\Repos\Slutprojekt\SlutprojektForms\obj\Debug\SlutprojektForms.Form1.resources
+C:\Users\edno03001\Source\Repos\Slutprojekt\SlutprojektForms\obj\Debug\SlutprojektForms.Properties.Resources.resources
+C:\Users\edno03001\Source\Repos\Slutprojekt\SlutprojektForms\obj\Debug\SlutprojektForms.csproj.GenerateResource.cache
+C:\Users\edno03001\Source\Repos\Slutprojekt\SlutprojektForms\obj\Debug\SlutprojektForms.csproj.CoreCompileInputs.cache
+C:\Users\edno03001\Source\Repos\Slutprojekt\SlutprojektForms\obj\Debug\SlutprojektForms.exe
+C:\Users\edno03001\Source\Repos\Slutprojekt\SlutprojektForms\obj\Debug\SlutprojektForms.pdb
+C:\Users\edno03001\Source\Repos\Slutprojekt\SlutprojektForms\obj\Debug\SlutprojektForms.Lägg_till_ny_vara.resources
