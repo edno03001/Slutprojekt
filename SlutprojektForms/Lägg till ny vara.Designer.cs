@@ -29,137 +29,144 @@ namespace SlutprojektForms
         /// </summary>
         private void InitializeComponent()
         {
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.checkBoxKött = new System.Windows.Forms.CheckBox();
+            this.checkBoxBärFrukt = new System.Windows.Forms.CheckBox();
+            this.checkBoxGrönsaker = new System.Windows.Forms.CheckBox();
+            this.checkBoxFärdigaRätter = new System.Windows.Forms.CheckBox();
+            this.checkBoxÖvrigt = new System.Windows.Forms.CheckBox();
+            this.textBoxKategori = new System.Windows.Forms.TextBox();
+            this.textBoxNamn = new System.Windows.Forms.TextBox();
+            this.textBoxDatum = new System.Windows.Forms.TextBox();
+            this.textBoxNamninput = new System.Windows.Forms.TextBox();
+            this.textBoxDatuminput = new System.Windows.Forms.TextBox();
+            this.buttonSpara = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.textBoxFack = new System.Windows.Forms.TextBox();
+            this.textBoxFackinput = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // checkBox1
+            // checkBoxKött
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Arial", 15F);
-            this.checkBox1.Location = new System.Drawing.Point(148, 120);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(65, 27);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Kött";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBoxKött.AutoSize = true;
+            this.checkBoxKött.Font = new System.Drawing.Font("Arial", 15F);
+            this.checkBoxKött.Location = new System.Drawing.Point(148, 120);
+            this.checkBoxKött.Name = "checkBoxKött";
+            this.checkBoxKött.Size = new System.Drawing.Size(65, 27);
+            this.checkBoxKött.TabIndex = 0;
+            this.checkBoxKött.Text = "Kött";
+            this.checkBoxKött.UseVisualStyleBackColor = true;
+            this.checkBoxKött.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // checkBox2
+            // checkBoxBärFrukt
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Arial", 15F);
-            this.checkBox2.Location = new System.Drawing.Point(148, 186);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(142, 27);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "Bär och frukt";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBoxBärFrukt.AutoSize = true;
+            this.checkBoxBärFrukt.Font = new System.Drawing.Font("Arial", 15F);
+            this.checkBoxBärFrukt.Location = new System.Drawing.Point(148, 186);
+            this.checkBoxBärFrukt.Name = "checkBoxBärFrukt";
+            this.checkBoxBärFrukt.Size = new System.Drawing.Size(142, 27);
+            this.checkBoxBärFrukt.TabIndex = 1;
+            this.checkBoxBärFrukt.Text = "Bär och frukt";
+            this.checkBoxBärFrukt.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // checkBoxGrönsaker
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Arial", 15F);
-            this.checkBox3.Location = new System.Drawing.Point(148, 153);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(122, 27);
-            this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "Grönsaker";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBoxGrönsaker.AutoSize = true;
+            this.checkBoxGrönsaker.Font = new System.Drawing.Font("Arial", 15F);
+            this.checkBoxGrönsaker.Location = new System.Drawing.Point(148, 153);
+            this.checkBoxGrönsaker.Name = "checkBoxGrönsaker";
+            this.checkBoxGrönsaker.Size = new System.Drawing.Size(122, 27);
+            this.checkBoxGrönsaker.TabIndex = 2;
+            this.checkBoxGrönsaker.Text = "Grönsaker";
+            this.checkBoxGrönsaker.UseVisualStyleBackColor = true;
+            this.checkBoxGrönsaker.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
-            // checkBox4
+            // checkBoxFärdigaRätter
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Arial", 15F);
-            this.checkBox4.Location = new System.Drawing.Point(148, 219);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(150, 27);
-            this.checkBox4.TabIndex = 3;
-            this.checkBox4.Text = "Färdiga rätter";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBoxFärdigaRätter.AutoSize = true;
+            this.checkBoxFärdigaRätter.Font = new System.Drawing.Font("Arial", 15F);
+            this.checkBoxFärdigaRätter.Location = new System.Drawing.Point(148, 219);
+            this.checkBoxFärdigaRätter.Name = "checkBoxFärdigaRätter";
+            this.checkBoxFärdigaRätter.Size = new System.Drawing.Size(150, 27);
+            this.checkBoxFärdigaRätter.TabIndex = 3;
+            this.checkBoxFärdigaRätter.Text = "Färdiga rätter";
+            this.checkBoxFärdigaRätter.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // checkBoxÖvrigt
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Font = new System.Drawing.Font("Arial", 15F);
-            this.checkBox5.Location = new System.Drawing.Point(148, 252);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(82, 27);
-            this.checkBox5.TabIndex = 4;
-            this.checkBox5.Text = "Övrigt";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.checkBoxÖvrigt.AutoSize = true;
+            this.checkBoxÖvrigt.Font = new System.Drawing.Font("Arial", 15F);
+            this.checkBoxÖvrigt.Location = new System.Drawing.Point(148, 252);
+            this.checkBoxÖvrigt.Name = "checkBoxÖvrigt";
+            this.checkBoxÖvrigt.Size = new System.Drawing.Size(82, 27);
+            this.checkBoxÖvrigt.TabIndex = 4;
+            this.checkBoxÖvrigt.Text = "Övrigt";
+            this.checkBoxÖvrigt.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // textBoxKategori
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox1.Font = new System.Drawing.Font("Arial", 20F);
-            this.textBox1.Location = new System.Drawing.Point(12, 110);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(130, 43);
-            this.textBox1.TabIndex = 5;
-            this.textBox1.Text = "Kategori";
+            this.textBoxKategori.BackColor = System.Drawing.SystemColors.Control;
+            this.textBoxKategori.Font = new System.Drawing.Font("Arial", 20F);
+            this.textBoxKategori.Location = new System.Drawing.Point(12, 110);
+            this.textBoxKategori.Multiline = true;
+            this.textBoxKategori.Name = "textBoxKategori";
+            this.textBoxKategori.Size = new System.Drawing.Size(130, 43);
+            this.textBoxKategori.TabIndex = 5;
+            this.textBoxKategori.Text = "Kategori";
             // 
-            // textBox2
+            // textBoxNamn
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox2.Font = new System.Drawing.Font("Arial", 20F);
-            this.textBox2.Location = new System.Drawing.Point(12, 12);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(130, 43);
-            this.textBox2.TabIndex = 6;
-            this.textBox2.Text = "Namn";
+            this.textBoxNamn.BackColor = System.Drawing.SystemColors.Control;
+            this.textBoxNamn.Font = new System.Drawing.Font("Arial", 20F);
+            this.textBoxNamn.Location = new System.Drawing.Point(12, 12);
+            this.textBoxNamn.Multiline = true;
+            this.textBoxNamn.Name = "textBoxNamn";
+            this.textBoxNamn.Size = new System.Drawing.Size(130, 43);
+            this.textBoxNamn.TabIndex = 6;
+            this.textBoxNamn.Text = "Namn";
             // 
-            // textBox3
+            // textBoxDatum
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox3.Font = new System.Drawing.Font("Arial", 20F);
-            this.textBox3.Location = new System.Drawing.Point(12, 61);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(130, 43);
-            this.textBox3.TabIndex = 7;
-            this.textBox3.Text = "Datum";
+            this.textBoxDatum.BackColor = System.Drawing.SystemColors.Control;
+            this.textBoxDatum.Font = new System.Drawing.Font("Arial", 20F);
+            this.textBoxDatum.Location = new System.Drawing.Point(12, 61);
+            this.textBoxDatum.Multiline = true;
+            this.textBoxDatum.Name = "textBoxDatum";
+            this.textBoxDatum.Size = new System.Drawing.Size(130, 43);
+            this.textBoxDatum.TabIndex = 7;
+            this.textBoxDatum.Text = "Datum";
             // 
-            // textBox4
+            // textBoxNamninput
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox4.Font = new System.Drawing.Font("Arial", 20F);
-            this.textBox4.Location = new System.Drawing.Point(148, 21);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(268, 25);
-            this.textBox4.TabIndex = 8;
+            this.textBoxNamninput.BackColor = System.Drawing.SystemColors.Control;
+            this.textBoxNamninput.Font = new System.Drawing.Font("Arial", 20F);
+            this.textBoxNamninput.Location = new System.Drawing.Point(148, 21);
+            this.textBoxNamninput.Multiline = true;
+            this.textBoxNamninput.Name = "textBoxNamninput";
+            this.textBoxNamninput.Size = new System.Drawing.Size(268, 25);
+            this.textBoxNamninput.TabIndex = 8;
+            this.textBoxNamninput.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
-            // textBox5
+            // textBoxDatuminput
             // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox5.Font = new System.Drawing.Font("Arial", 20F);
-            this.textBox5.Location = new System.Drawing.Point(148, 70);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(268, 25);
-            this.textBox5.TabIndex = 9;
+            this.textBoxDatuminput.BackColor = System.Drawing.SystemColors.Control;
+            this.textBoxDatuminput.Font = new System.Drawing.Font("Arial", 20F);
+            this.textBoxDatuminput.Location = new System.Drawing.Point(148, 70);
+            this.textBoxDatuminput.Multiline = true;
+            this.textBoxDatuminput.Name = "textBoxDatuminput";
+            this.textBoxDatuminput.Size = new System.Drawing.Size(268, 25);
+            this.textBoxDatuminput.TabIndex = 9;
+            this.textBoxDatuminput.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
-            // button1
+            // buttonSpara
             // 
-            this.button1.Font = new System.Drawing.Font("Arial", 20F);
-            this.button1.Location = new System.Drawing.Point(12, 357);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(193, 68);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Spara";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonSpara.Font = new System.Drawing.Font("Arial", 20F);
+            this.buttonSpara.Location = new System.Drawing.Point(12, 357);
+            this.buttonSpara.Name = "buttonSpara";
+            this.buttonSpara.Size = new System.Drawing.Size(193, 68);
+            this.buttonSpara.TabIndex = 10;
+            this.buttonSpara.Text = "Spara";
+            this.buttonSpara.UseVisualStyleBackColor = true;
+            this.buttonSpara.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -170,24 +177,49 @@ namespace SlutprojektForms
             this.button2.TabIndex = 11;
             this.button2.Text = "Exit";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // textBoxFack
+            // 
+            this.textBoxFack.BackColor = System.Drawing.SystemColors.Control;
+            this.textBoxFack.Font = new System.Drawing.Font("Arial", 20F);
+            this.textBoxFack.Location = new System.Drawing.Point(12, 274);
+            this.textBoxFack.Multiline = true;
+            this.textBoxFack.Name = "textBoxFack";
+            this.textBoxFack.Size = new System.Drawing.Size(130, 43);
+            this.textBoxFack.TabIndex = 12;
+            this.textBoxFack.Text = "Fack";
+            // 
+            // textBoxFackinput
+            // 
+            this.textBoxFackinput.BackColor = System.Drawing.SystemColors.Control;
+            this.textBoxFackinput.Font = new System.Drawing.Font("Arial", 20F);
+            this.textBoxFackinput.Location = new System.Drawing.Point(148, 285);
+            this.textBoxFackinput.Multiline = true;
+            this.textBoxFackinput.Name = "textBoxFackinput";
+            this.textBoxFackinput.Size = new System.Drawing.Size(268, 25);
+            this.textBoxFackinput.TabIndex = 13;
+            this.textBoxFackinput.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // Lägg_till_ny_vara
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(428, 450);
+            this.Controls.Add(this.textBoxFackinput);
+            this.Controls.Add(this.textBoxFack);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.checkBox5);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.buttonSpara);
+            this.Controls.Add(this.textBoxDatuminput);
+            this.Controls.Add(this.textBoxNamninput);
+            this.Controls.Add(this.textBoxDatum);
+            this.Controls.Add(this.textBoxNamn);
+            this.Controls.Add(this.textBoxKategori);
+            this.Controls.Add(this.checkBoxÖvrigt);
+            this.Controls.Add(this.checkBoxFärdigaRätter);
+            this.Controls.Add(this.checkBoxGrönsaker);
+            this.Controls.Add(this.checkBoxBärFrukt);
+            this.Controls.Add(this.checkBoxKött);
             this.Name = "Lägg_till_ny_vara";
             this.Text = "Lägg till ny vara";
             this.ResumeLayout(false);
@@ -197,17 +229,19 @@ namespace SlutprojektForms
 
         #endregion
 
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.CheckBox checkBoxKött;
+        private System.Windows.Forms.CheckBox checkBoxBärFrukt;
+        private System.Windows.Forms.CheckBox checkBoxGrönsaker;
+        private System.Windows.Forms.CheckBox checkBoxFärdigaRätter;
+        private System.Windows.Forms.CheckBox checkBoxÖvrigt;
+        private System.Windows.Forms.TextBox textBoxKategori;
+        private System.Windows.Forms.TextBox textBoxNamn;
+        private System.Windows.Forms.TextBox textBoxDatum;
+        private System.Windows.Forms.TextBox textBoxNamninput;
+        private System.Windows.Forms.TextBox textBoxDatuminput;
+        private System.Windows.Forms.Button buttonSpara;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBoxFack;
+        private System.Windows.Forms.TextBox textBoxFackinput;
     }
 }

@@ -9,3 +9,4 @@ C:\Users\edno03001\Source\Repos\Slutprojekt\SlutprojektForms\obj\Debug\Slutproje
 C:\Users\edno03001\Source\Repos\Slutprojekt\SlutprojektForms\obj\Debug\SlutprojektForms.exe
 C:\Users\edno03001\Source\Repos\Slutprojekt\SlutprojektForms\obj\Debug\SlutprojektForms.pdb
 C:\Users\edno03001\Source\Repos\Slutprojekt\SlutprojektForms\obj\Debug\SlutprojektForms.Lägg_till_ny_vara.resources
+C:\Users\edno03001\source\repos\Slutprojekt\SlutprojektForms\obj\Debug\SlutprojektForms.UserControl.resources

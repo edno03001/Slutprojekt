@@ -30,9 +30,9 @@ namespace SlutprojektForms
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.button1 = new System.Windows.Forms.Button();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.läggTillNyVaraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sparaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.visaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.allaVarorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kategoriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -40,15 +40,18 @@ namespace SlutprojektForms
             this.grönsakerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fruktOchGröntToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.färdigaRätterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sparaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.övrigtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.övrigtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.test = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.userControlCard1 = new SlutprojektForms.UserControl();
             this.menuStrip1.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -61,18 +64,6 @@ namespace SlutprojektForms
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.Window;
-            this.button1.Font = new System.Drawing.Font("Arial", 20F);
-            this.button1.Location = new System.Drawing.Point(12, 26);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(236, 84);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "1";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // fileToolStripMenuItem
             // 
@@ -87,9 +78,15 @@ namespace SlutprojektForms
             // läggTillNyVaraToolStripMenuItem
             // 
             this.läggTillNyVaraToolStripMenuItem.Name = "läggTillNyVaraToolStripMenuItem";
-            this.läggTillNyVaraToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.läggTillNyVaraToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.läggTillNyVaraToolStripMenuItem.Text = "Lägg till ny vara";
             this.läggTillNyVaraToolStripMenuItem.Click += new System.EventHandler(this.läggTillNyVaraToolStripMenuItem_Click);
+            // 
+            // sparaToolStripMenuItem
+            // 
+            this.sparaToolStripMenuItem.Name = "sparaToolStripMenuItem";
+            this.sparaToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.sparaToolStripMenuItem.Text = "Spara";
             // 
             // visaToolStripMenuItem
             // 
@@ -103,8 +100,9 @@ namespace SlutprojektForms
             // allaVarorToolStripMenuItem
             // 
             this.allaVarorToolStripMenuItem.Name = "allaVarorToolStripMenuItem";
-            this.allaVarorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.allaVarorToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.allaVarorToolStripMenuItem.Text = "Alla varor";
+            this.allaVarorToolStripMenuItem.Click += new System.EventHandler(this.allaVarorToolStripMenuItem_Click);
             // 
             // kategoriToolStripMenuItem
             // 
@@ -115,38 +113,50 @@ namespace SlutprojektForms
             this.färdigaRätterToolStripMenuItem,
             this.övrigtToolStripMenuItem});
             this.kategoriToolStripMenuItem.Name = "kategoriToolStripMenuItem";
-            this.kategoriToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.kategoriToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.kategoriToolStripMenuItem.Text = "Kategori";
             // 
             // köttToolStripMenuItem
             // 
             this.köttToolStripMenuItem.Name = "köttToolStripMenuItem";
-            this.köttToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.köttToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.köttToolStripMenuItem.Text = "Kött";
             // 
             // grönsakerToolStripMenuItem
             // 
             this.grönsakerToolStripMenuItem.Name = "grönsakerToolStripMenuItem";
-            this.grönsakerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.grönsakerToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.grönsakerToolStripMenuItem.Text = "Grönsaker";
             // 
             // fruktOchGröntToolStripMenuItem
             // 
             this.fruktOchGröntToolStripMenuItem.Name = "fruktOchGröntToolStripMenuItem";
-            this.fruktOchGröntToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fruktOchGröntToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.fruktOchGröntToolStripMenuItem.Text = "Bär och frukt";
             // 
             // färdigaRätterToolStripMenuItem
             // 
             this.färdigaRätterToolStripMenuItem.Name = "färdigaRätterToolStripMenuItem";
-            this.färdigaRätterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.färdigaRätterToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.färdigaRätterToolStripMenuItem.Text = "Färdiga rätter";
             // 
-            // sparaToolStripMenuItem
+            // övrigtToolStripMenuItem
             // 
-            this.sparaToolStripMenuItem.Name = "sparaToolStripMenuItem";
-            this.sparaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.sparaToolStripMenuItem.Text = "Spara";
+            this.övrigtToolStripMenuItem.Name = "övrigtToolStripMenuItem";
+            this.övrigtToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
+            this.övrigtToolStripMenuItem.Text = "Övrigt";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.Window;
+            this.button1.Font = new System.Drawing.Font("Arial", 20F);
+            this.button1.Location = new System.Drawing.Point(12, 26);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(236, 84);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "1";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -204,27 +214,38 @@ namespace SlutprojektForms
             this.button6.Text = "6";
             this.button6.UseVisualStyleBackColor = false;
             // 
-            // richTextBox1
+            // test
             // 
-            this.richTextBox1.Font = new System.Drawing.Font("Arial", 15F);
-            this.richTextBox1.Location = new System.Drawing.Point(254, 26);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(534, 323);
-            this.richTextBox1.TabIndex = 7;
-            this.richTextBox1.Text = "";
+            this.test.Location = new System.Drawing.Point(336, 462);
+            this.test.Name = "test";
+            this.test.Size = new System.Drawing.Size(75, 23);
+            this.test.TabIndex = 8;
+            this.test.Text = "test";
+            this.test.UseVisualStyleBackColor = true;
+            this.test.Click += new System.EventHandler(this.test_Click);
             // 
-            // övrigtToolStripMenuItem
+            // flowLayoutPanel1
             // 
-            this.övrigtToolStripMenuItem.Name = "övrigtToolStripMenuItem";
-            this.övrigtToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.övrigtToolStripMenuItem.Text = "Övrigt";
+            this.flowLayoutPanel1.Controls.Add(this.userControlCard1);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(254, 27);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(534, 402);
+            this.flowLayoutPanel1.TabIndex = 9;
+            // 
+            // userControlCard1
+            // 
+            this.userControlCard1.Location = new System.Drawing.Point(3, 3);
+            this.userControlCard1.Name = "userControlCard1";
+            this.userControlCard1.Size = new System.Drawing.Size(300, 66);
+            this.userControlCard1.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 522);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.test);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -238,6 +259,7 @@ namespace SlutprojektForms
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -262,8 +284,10 @@ namespace SlutprojektForms
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.ToolStripMenuItem övrigtToolStripMenuItem;
+        private System.Windows.Forms.Button test;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private UserControl userControlCard1;
     }
 }
 
