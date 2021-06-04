@@ -144,7 +144,6 @@ namespace SlutprojektForms
             this.textBoxNamninput.Name = "textBoxNamninput";
             this.textBoxNamninput.Size = new System.Drawing.Size(268, 25);
             this.textBoxNamninput.TabIndex = 8;
-            this.textBoxNamninput.Text = "f";
             this.textBoxNamninput.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // textBoxDatuminput

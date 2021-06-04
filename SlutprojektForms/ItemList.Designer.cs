@@ -29,6 +29,7 @@ namespace SlutprojektForms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ItemList));
             this.label1 = new System.Windows.Forms.Label();
             this.labelNamn = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -37,6 +38,8 @@ namespace SlutprojektForms
             this.labelDatum = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.labelKategori = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -119,10 +122,22 @@ namespace SlutprojektForms
             this.labelKategori.TabIndex = 7;
             this.labelKategori.Text = "kategori";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(345, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(45, 45);
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // ItemList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelKategori);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.labelDatum);
@@ -134,6 +149,7 @@ namespace SlutprojektForms
             this.Name = "ItemList";
             this.Size = new System.Drawing.Size(393, 97);
             this.Load += new System.EventHandler(this.ItemList_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -149,5 +165,6 @@ namespace SlutprojektForms
         private System.Windows.Forms.Label labelDatum;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label labelKategori;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
