@@ -14,7 +14,7 @@ namespace SlutprojektForms
     public partial class Form1 : Form
     {
         string path = System.IO.Path.GetFileName("C:\\Users\\edno03001\\source\\repos\\Slutprojekt\\datafil.xml");
-
+        XmlDocument xmlDoc = new XmlDocument();
 
         public Form1()
         {
@@ -23,7 +23,12 @@ namespace SlutprojektForms
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            xmlDoc.Load(path);
+            XmlNodeList fack1 = xmlDoc.SelectSingleNode("/root/fack1").ChildNodes;
+            if (fack1.Count == 0)
+                MessageBox.Show("Vänligen försök igen, eller lägg till en ny produkt", "Facket är tomt!");
+            else
+                populateItems(fack1);
         }
 
         private void fileToolStripMenuItem_Click(object sender, EventArgs e)
@@ -33,7 +38,12 @@ namespace SlutprojektForms
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            xmlDoc.Load(path);
+            XmlNodeList fack2 = xmlDoc.SelectSingleNode("/root/fack2").ChildNodes;
+            if (fack2.Count == 0)
+                MessageBox.Show("Vänligen försök igen, eller lägg till en ny produkt", "Facket är tomt!");
+            else
+                populateItems(fack2);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -66,23 +76,78 @@ namespace SlutprojektForms
             //plats för fil: C:\Users\edno03001\source\repos\Slutprojekt\SlutprojektForms\bin\Debug
         }
 
-        private void populateItems()
+        private void populateItems(XmlNodeList nodeList)
         {
-            XmlDocument xmlDoc = new XmlDocument();
             xmlDoc.Load(path);
-            List<UserControl> itemlist = new List<UserControl>();
+            List<ItemList> itemslist = new List<ItemList>();
 
-            for (int i = 0; i < itemlist.Count; i++)
+            foreach (XmlElement element in nodeList)
             {
-                XmlElement namn = (XmlElement)xmlDoc.SelectSingleNode("/root/fack/kategori/namn");
-                if (flowLayoutPanel1.Controls.Count < 0)
-                {
-                    flowLayoutPanel1.Controls.Clear();
-                }
-                else
-                    flowLayoutPanel1.Controls.Add(itemlist[i]);
+                itemslist.Add(new ItemList());
 
             }
+
+            //XmlElement namn = (XmlElement)xmlDoc.SelectSingleNode("/root/fack/namn");
+            
+            for (int i = 0; i < itemslist.Count; i++)
+            {
+                //if(itemslist[i].KategoriTitel!=null && itemslist[i].DatumTitel!=null)
+                {
+                    itemslist[i].NamnTitel = nodeList[i].InnerText;
+                    itemslist[i].KategoriTitel = nodeList[i].Attributes["kategori"].Value; //attributerna blir null
+                    itemslist[i].DatumTitel = nodeList[i].Attributes["datum"].Value;
+                    flowLayoutPanel1.Controls.Add(itemslist[i]);
+                }
+                
+            }
+            
+            
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            xmlDoc.Load(path);
+            XmlNodeList fack3 = xmlDoc.SelectSingleNode("/root/fack3").ChildNodes;
+            if (fack3.Count == 0)
+                MessageBox.Show("Vänligen försök igen, eller lägg till en ny produkt", "Facket är tomt!");
+            else
+                populateItems(fack3);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            xmlDoc.Load(path);
+            XmlNodeList fack4 = xmlDoc.SelectSingleNode("/root/fack4").ChildNodes;
+            if (fack4.Count == 0)
+                MessageBox.Show("Vänligen försök igen, eller lägg till en ny produkt", "Facket är tomt!");
+            else
+                populateItems(fack4);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            xmlDoc.Load(path);
+            XmlNodeList fack5 = xmlDoc.SelectSingleNode("/root/fack5").ChildNodes;
+            if (fack5.Count == 0)
+                MessageBox.Show("Vänligen försök igen, eller lägg till en ny produkt", "Facket är tomt!");
+            else
+                populateItems(fack5);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            xmlDoc.Load(path);
+            XmlNodeList fack6 = xmlDoc.SelectSingleNode("/root/fack6").ChildNodes;
+            if(fack6.Count==0)
+                MessageBox.Show("Vänligen försök igen, eller lägg till en ny produkt", "Facket är tomt!");
+            else
+                populateItems(fack6);
+
         }
     }
 }

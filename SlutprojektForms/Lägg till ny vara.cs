@@ -45,8 +45,11 @@ namespace SlutprojektForms
         {
         }
 
-        private void button1_Click(object sender, EventArgs e) //knapp för spara
+       
+        private void button1_Click(object sender, EventArgs e)
         {
+            if(textBoxNamninput.TextLength==0 || textBoxFackinput.TextLength==0) //skriv in felmeddelande
+                
 
             if (checkBoxKött.Checked)
             {
@@ -72,32 +75,72 @@ namespace SlutprojektForms
             XmlDocument xmlDoc = new XmlDocument(); //åkallar xmldocument
             xmlDoc.Load(path);
 
-            XmlElement root = (XmlElement)xmlDoc.SelectSingleNode("/root"); //hittar facket
-
+            XmlElement root = (XmlElement)xmlDoc.SelectSingleNode("/root"); 
 
            
-            XmlElement fack = (XmlElement)xmlDoc.SelectSingleNode("/root/fack");
 
-            XmlElement kategoriElement = (XmlElement)xmlDoc.SelectSingleNode("/root/fack/kategori");
+            //XmlElement kategoriElement = (XmlElement)xmlDoc.SelectSingleNode("/root/fack/kategori");
+            
             XmlElement namnElement = xmlDoc.CreateElement("namn");
+            XmlAttribute kategoriAttribute = xmlDoc.CreateAttribute("kategori");
             XmlAttribute datumAttribute = xmlDoc.CreateAttribute("datum");
+            XmlAttribute idAttribute = xmlDoc.CreateAttribute("id"); 
+            int facknummer = Convert.ToInt32(textBoxFackinput.Text);
+            
+            
+            kategoriAttribute.InnerText = kategori;
+            namnElement.InnerText = textBoxNamninput.Text;
+            datumAttribute.Value = textBoxDatuminput.Text;
 
-
-            if(fack !=null)
+            namnElement.Attributes.Append(kategoriAttribute);
+            namnElement.Attributes.Append(datumAttribute);
+            if(facknummer == 1)
             {
-                fack.Value = textBoxFackinput.Text;
-                kategoriElement.InnerText = kategori;
-                namnElement.InnerText = textBoxNamninput.Text;
-                datumAttribute.Value = textBoxDatuminput.Text;
-
-                fack.AppendChild(kategoriElement);
-                kategoriElement.AppendChild(namnElement);
-                namnElement.Attributes.Append(datumAttribute);
-                root.AppendChild(fack);
+                XmlElement fack = (XmlElement)xmlDoc.SelectSingleNode("/root/fack1");
+            fack.AppendChild(namnElement);
+                idAttribute.Value = "1";
+                namnElement.Attributes.Append(idAttribute);
+            }
+            else if (facknummer == 2)
+            {
+                    XmlElement fack = (XmlElement)xmlDoc.SelectSingleNode("/root/fack2");
+                fack.AppendChild(namnElement);
+                idAttribute.Value = "2";
+                namnElement.Attributes.Append(idAttribute);
+            }
+            else if (facknummer == 3)
+            {
+                    XmlElement fack = (XmlElement)xmlDoc.SelectSingleNode("/root/fack3");
+                fack.AppendChild(namnElement);
+                idAttribute.Value = "3";
+                namnElement.Attributes.Append(idAttribute);
+            }
+            else if (facknummer == 4)
+            {
+                    XmlElement fack = (XmlElement)xmlDoc.SelectSingleNode("/root/fack4");
+                fack.AppendChild(namnElement);
+                idAttribute.Value = "4";
+                namnElement.Attributes.Append(idAttribute);
+            }
+            else if (facknummer == 5)
+            {
+                    XmlElement fack = (XmlElement)xmlDoc.SelectSingleNode("/root/fack5");
+                    fack.AppendChild(namnElement);
+                idAttribute.Value = "5";
+                namnElement.Attributes.Append(idAttribute);
+            }
+            else if (facknummer == 6)
+            {
+                XmlElement fack = (XmlElement)xmlDoc.SelectSingleNode("/root/fack6");
+                fack.AppendChild(namnElement);
+                idAttribute.Value = "6";
+                namnElement.Attributes.Append(idAttribute);
             }
             
-                
-            
+
+
+
+
 
             xmlDoc.Save(path);
 

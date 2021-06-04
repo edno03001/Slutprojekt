@@ -1,3 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
+  <fack1>
+    <namn kategori="kött" datum="0206">Lasagne</namn>
+  </fack1>
+  <fack2>
+    <namn kategori="bär och frukt" datum="5">din pappa</namn>
+  </fack2>
+  <fack3>
+    <namn kategori="kött" datum="5">hej</namn>
+    <namn kategori="övrigt" datum="54">din syster</namn>
+    <namn kategori="färdiga rätter" datum="2412" id="3">Linsgryta</namn>
+  </fack3>
+  <fack4>
+    <namn kategori="grönsaker" datum="4">din mamma</namn>
+  </fack4>
+  <fack5>
+  </fack5>
+  <fack6>
+  </fack6>
 </root>

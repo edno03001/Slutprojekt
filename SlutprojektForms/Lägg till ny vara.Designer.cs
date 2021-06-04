@@ -138,18 +138,19 @@ namespace SlutprojektForms
             // textBoxNamninput
             // 
             this.textBoxNamninput.BackColor = System.Drawing.SystemColors.Control;
-            this.textBoxNamninput.Font = new System.Drawing.Font("Arial", 20F);
+            this.textBoxNamninput.Font = new System.Drawing.Font("Arial", 12F);
             this.textBoxNamninput.Location = new System.Drawing.Point(148, 21);
             this.textBoxNamninput.Multiline = true;
             this.textBoxNamninput.Name = "textBoxNamninput";
             this.textBoxNamninput.Size = new System.Drawing.Size(268, 25);
             this.textBoxNamninput.TabIndex = 8;
+            this.textBoxNamninput.Text = "f";
             this.textBoxNamninput.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // textBoxDatuminput
             // 
             this.textBoxDatuminput.BackColor = System.Drawing.SystemColors.Control;
-            this.textBoxDatuminput.Font = new System.Drawing.Font("Arial", 20F);
+            this.textBoxDatuminput.Font = new System.Drawing.Font("Arial", 12F);
             this.textBoxDatuminput.Location = new System.Drawing.Point(148, 70);
             this.textBoxDatuminput.Multiline = true;
             this.textBoxDatuminput.Name = "textBoxDatuminput";
@@ -193,7 +194,7 @@ namespace SlutprojektForms
             // textBoxFackinput
             // 
             this.textBoxFackinput.BackColor = System.Drawing.SystemColors.Control;
-            this.textBoxFackinput.Font = new System.Drawing.Font("Arial", 20F);
+            this.textBoxFackinput.Font = new System.Drawing.Font("Arial", 12F);
             this.textBoxFackinput.Location = new System.Drawing.Point(148, 285);
             this.textBoxFackinput.Multiline = true;
             this.textBoxFackinput.Name = "textBoxFackinput";

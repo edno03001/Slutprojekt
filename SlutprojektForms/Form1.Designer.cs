@@ -47,11 +47,8 @@ namespace SlutprojektForms
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.test = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.userControlCard1 = new SlutprojektForms.UserControl();
             this.menuStrip1.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -180,6 +177,7 @@ namespace SlutprojektForms
             this.button3.TabIndex = 3;
             this.button3.Text = "3";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -191,6 +189,7 @@ namespace SlutprojektForms
             this.button4.TabIndex = 4;
             this.button4.Text = "4";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -202,6 +201,7 @@ namespace SlutprojektForms
             this.button5.TabIndex = 5;
             this.button5.Text = "5";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -213,31 +213,16 @@ namespace SlutprojektForms
             this.button6.TabIndex = 6;
             this.button6.Text = "6";
             this.button6.UseVisualStyleBackColor = false;
-            // 
-            // test
-            // 
-            this.test.Location = new System.Drawing.Point(336, 462);
-            this.test.Name = "test";
-            this.test.Size = new System.Drawing.Size(75, 23);
-            this.test.TabIndex = 8;
-            this.test.Text = "test";
-            this.test.UseVisualStyleBackColor = true;
-            this.test.Click += new System.EventHandler(this.test_Click);
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.userControlCard1);
+            this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(254, 27);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(534, 402);
             this.flowLayoutPanel1.TabIndex = 9;
-            // 
-            // userControlCard1
-            // 
-            this.userControlCard1.Location = new System.Drawing.Point(3, 3);
-            this.userControlCard1.Name = "userControlCard1";
-            this.userControlCard1.Size = new System.Drawing.Size(300, 66);
-            this.userControlCard1.TabIndex = 0;
+            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // Form1
             // 
@@ -245,7 +230,6 @@ namespace SlutprojektForms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 522);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.test);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -259,7 +243,6 @@ namespace SlutprojektForms
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -285,9 +268,7 @@ namespace SlutprojektForms
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.ToolStripMenuItem övrigtToolStripMenuItem;
-        private System.Windows.Forms.Button test;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private UserControl userControlCard1;
     }
 }
 
